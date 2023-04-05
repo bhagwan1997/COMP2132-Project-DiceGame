@@ -1,0 +1,157 @@
+@import url("fonts.css");
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+:root {
+    --heading-font-face: "leaguespartan-bold-webfont";
+    --block-text-font-face: "fira_sansregular";
+}
+
+body {
+    font-family: var(--block-text-font-face), 'Verdana', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font-face), 'Helvetica', sans-serif;
+    letter-spacing: 3px;
+}
+
+main {
+    max-width: 80%;
+    margin: 20px auto;
+    background-image: url("../images/white-wallpaper.jpg");
+    padding: 50px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 10px;
+}
+
+header {
+    text-align: left;
+    padding: 3px;
+    background-color: #3b655b;
+    color: white;
+}
+
+.title {
+    padding-left: 10px;
+}
+
+/* CSS for different assignments */
+/*--------------------------------------------------------------------*/
+
+.game-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px 0;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 15px;
+    background-image: url("../images/wallpaper.png");
+}
+
+
+h1 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.dice-game {
+    border-bottom: 2px solid black;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.player-dice,
+.computer-dice {
+    width: 500px;
+    margin: 0 50px;
+    border: 2px solid black;
+    padding: 25px;
+    position: relative;
+    background-image: url("../images/player-wallpaper.jpg");
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #3e5557;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #334042;
+}
+
+#winner-message {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 35px;
+    animation: slide-in 1s;
+}
+
+ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+  
+#toggleBtn {
+    margin-top: 10px;
+}
+
+.game-rule {
+    border-bottom: 2px solid black;
+}
+
+.icon {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+}
+
+.output {
+    font-size: 50px;
+}
+  
+
+/*--------------------------------------------------------------------*/
+
+footer {
+    text-align: right;
+    padding: 3px;
+    background-color: lightgray;
+}
+
+.footertxt {
+    padding-right: 10px;
+}
