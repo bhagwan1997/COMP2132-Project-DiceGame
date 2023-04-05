@@ -112,8 +112,12 @@ button:hover {
 #winner-message {
     font-size: 40px;
     font-weight: bold;
-    margin-top: 35px;
-    animation: slide-in 1s;
+    max-width: 60%;
+    margin: 20px auto;
+    background-image: url("../images/winner.jpg");
+    border: 2px solid black;
+    border-radius: 10px;
+    
 }
 
 ul {
