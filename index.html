@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang-"en">
+
+<head>
+
+    <title>Bhagwan Singh Virdi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/styles.css"> <!-- Update the link to the generated CSS file -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/scripts.js" defer="defer"></script>
+</head>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+            <h1 class="title">Project: Dice Game</h1>
+        </header>
+
+        <main>
+
+            <div class="game-container">
+
+                <h1 class="dice-game">★ ★ ★ ★ ★  Dice Game  ★ ★ ★ ★ ★</h1>
+
+                <div class="dice-container">
+
+                    <div class="player-dice">
+
+                        <img src="images/player.jpg" class="icon" alt="player">
+
+                        <p>Player Dice:</p>
+                        <div class="output" id="player-dice"></div>
+
+                        <p>Round Score:</p>
+                        <div class="output" id="player-score">0</div>
+
+                        <p>Total Score:</p>
+                        <div class="output" id="player-total">0</div>
+
+                    </div>
+
+                    <div class="computer-dice">
+
+                        <img src="images/computer.jpg" class="icon" alt="computer">
+
+                        <p>Computer Dice:</p>
+                        <div class="output" id="computer-dice"></div>
+
+                        <p>Round Score:</p>
+                        <div class="output" id="computer-score">0</div>
+
+                        <p>Total Score:</p>
+                        <div class="output" id="computer-total">0</div>
+
+                    </div>
+
+                </div>
+                
+                <div class="buttons">
+                    <button id="roll-button">Roll Dice</button>
+                    <button id="reset-button">New Game</button>
+                </div>
+                
+                <p id="winner-message"></p>
+
+            </div>
+
+            <div>
+
+                <button id="toggleBtn">Details</button>
+                
+                <h3 class="game-rule">How To Play:</h3>
+
+                <ul id="howToPlayList">
+                    <li>To start, click the 'Roll Dice' button.</li>
+                    <li>To advance to the next round, click the 'Roll Dice button again.</li>
+                    <li>After three rounds, the game is over and the final score is calculated.</li>
+                    <li>If you want to play again, click the 'New Game' button or refresh the page.</li>
+                </ul>
+
+                <h3 class="game-rule">Rules:</h3>
+
+                <ul id="rulesList">
+                    <li>Each round, you and the computer both roll a pair of dice.</li>
+                    <li>Your score for that round will be based on the sum of the dice.</li>
+                    <li>If you roll doubles (e.g. a 3 and a 3) then your score is multiplied by 2.</li>
+                    <li>Rolling a 1 will give you a score of 0 for that round.</li>
+                    <li>The player who has the most points at the end of three rounds is the winner.</li>
+                </ul>
+
+            </div>
+                
+        </main>
+
+        <footer>
+            <p class="footertxt">Author: Bhagwan S. Virdi</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
